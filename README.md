@@ -1,5 +1,4 @@
-# function_transformation_plots
-script to plot steps of function transformation
+# script to plot steps of function transformation
 
 ### Step 1 - define basic function _f(x), e.g. root square x**(1/2) as:
 ```python
