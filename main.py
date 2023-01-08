@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import re
+import warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning) 
 
 # Step 1 - define basic function, e.g. root square x**(1/2)
 def _f(x):
@@ -25,7 +27,7 @@ f(-|x+2|+1)
 '''
 
 # Step 3 - define symmetric range of plot, e.g. for xlim = 5 x ∈ <-5,5>
-xlim, ylim = 5.,3.
+xlim, ylim = 5.,5.
 dx = .1
 
 ############################## Don't modify below this line ########################
@@ -60,14 +62,16 @@ x = np.arange(_xlim[0],_xlim[1], dx)
 
 X = [] # List of x values for all transformation steps
 Y = [] # List of y values for all transformation steps
+
 Y_ = Y_.splitlines()
 
 # Calculate each step of transformation
 for y_ in Y_:
-    print('line: ' + y_)
 
-    if y_ == '':
+    if len(y_) == 0:
         continue
+
+    print('line: ' + y_)
 
     # Check equation
     if (y_.count('(') + y_.count(')')) % 2 > 0:
@@ -95,7 +99,11 @@ for y_ in Y_:
         match = re.search('\|.*\|', y_) 
 
     # Find solutions of current equation and append to Y
-    exec('Y.append('+ y_ + ')')
+    try:
+        exec('Y.append('+ y_ + ')')
+    except:
+        print('ERROR - line ' + y_ + 'cannot be executed')
+        break
 
 # Plot transformation steps in pairs
 Ylen = len(Y)
@@ -123,3 +131,5 @@ elif Ylen > 2:
         axs[i].set_xlim(_xlim[0],_xlim[1])
         axs[i].set_ylim(_ylim[0],_ylim[1])
     plt.show()
+
+
