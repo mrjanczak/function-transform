@@ -12,12 +12,14 @@ oraz
 
 ```f(x) -> f(x+1) -> f(|x|+1)```
 
+Na koniec otrzymujemy przecież tę samą funkcjię.
+
 Jednakże jeśli chcemy **WYZNACZYĆ GRAFICZNIE** wykres funkcji g(x) na drodze kolejnych przekształceń podstawowych, **MUSIMY** stosować określoną **KOLEJNOŚĆ**, 
 w przeciwnym razie nasze graficzne przekształcenia będą błędne! Przykładowo przekształcenie:
 
 ```f(x) -> f(|x|) -> f(|x|+1)```
 
-nie będzie translacją, co widać na wykresie:
+nie będzie translacją, co widać na wykresie (załóżmy f(x) = x**2 (2-ga potęga x)):
 
 ![Figure_1](https://user-images.githubusercontent.com/6569984/212870332-2760f47e-ccb3-4f11-ab06-bdd263118e4c.png)
 
