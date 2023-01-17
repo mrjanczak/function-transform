@@ -4,7 +4,7 @@ i na funkcji (PRZEKSZTAŁCENIA Y). Podstawowe przekształcenia opisane są na st
 
 [https://pl.wikibooks.org/wiki/Matematyka_dla_liceum/Funkcje_i_ich_w%C5%82asno%C5%9Bci/Przekszta%C5%82canie_wykresu_funkcji]
 
-Z czysto artmetycznego znaczenia kolejność tych przekształceń nie ma znaczenia: n.p. funkcję złożoną g(x) = f(|x|+1) możemy z powodzeniem otrzymać na 2 sposoby:
+Z czysto artmetycznego punktu widzenia kolejność tych przekształceń nie ma znaczenia: n.p. funkcję złożoną g(x) = f(|x|+1) możemy z powodzeniem otrzymać na 2 sposoby:
 
 ```f(x) -> f(|x|) -> f(|x|+1)```
 
