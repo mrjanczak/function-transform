@@ -1,4 +1,4 @@
-# Definicje:
+# Wstęp:
 Przekształcenie funkcji podstawowej f(x) do funkcji złożonej g(x) można traktować jako 2 oddzielne przekształcenia przeprowadzone na argumencie i na funkcji. 
 Podstawowe przekształcenia opisane są na stronie:
 
