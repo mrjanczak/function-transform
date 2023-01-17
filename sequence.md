@@ -28,7 +28,7 @@ Zasady ustalające właściwą kolejność przekształceń są całkowicie róż
 
 ### PRZEKSZTAŁCENIA NA ARGUMENCIE
 
-Przy przekształceniach X (na argumencie) obowiązuje zasada, **"ostatni będą pierwszymi"**.
+Przy przekształceniach na argumencie obowiązuje zasada, **"ostatni będą pierwszymi"**.
 
 Wprowadźmy następujące rozróżnienie:
 x bez minusa i wartości bezwzględnej nazwijmy **czystym x**
@@ -60,7 +60,7 @@ widać, że operacja +1 stojąca niejako na końcu musi być wykonana jako pierw
 
 ### PRZEKSZTAŁCENIA NA FUNKCJI
 
-Tu obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nietylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
+Przy przekształceniach na funkcji obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nietylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
 
 ```f(x)+1 -> -f(x)+1```
 
