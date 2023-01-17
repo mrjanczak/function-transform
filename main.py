@@ -14,7 +14,8 @@ def _f(x):
 # Step 2 - define sequence of equations to graphically determine plot of desired equation 
 # Use basic function as f(x) - can be used only once per line!
 # Allowable operators: +, -, *, /, ** (power), |...| (absolute value e.g. |x+2|)
-Y_ = '''f(x)
+Y_ = '''
+f(x)
 f(x+1)
 f(-x+1)
 f(-|x|+1)
@@ -63,11 +64,11 @@ X = [] # List of x values for all transformation steps
 Y = [] # List of y values for all transformation steps
 
 Y_ = Y_.splitlines()
-
+Y__ = []
 # Calculate each step of transformation
 for y_ in Y_:
 
-    if len(y_) == 0:
+    if len(y_) == 0 or y_ == '':
         continue
 
     print('line: ' + y_)
@@ -99,6 +100,7 @@ for y_ in Y_:
 
     # Find solutions of current equation and append to Y
     try:
+        Y__.append(y_)
         exec('Y.append('+ y_ + ')')
     except:
         print('ERROR - line ' + y_ + 'cannot be executed')
@@ -110,25 +112,24 @@ if Ylen < 2:
     print('Provide more equations')
 
 elif Ylen == 2:
-    fig, axs = plt.subplots(len(Y)-1, 1, figsize=(5, 10), layout="constrained")
-    for i in range(len(Y)-1):
-        axs.plot(X[i],  Y[i],   'r', label=Y_[i])
-        axs.plot(X[i+1],Y[i+1], 'g--',   label=Y_[i+1])
-        axs.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    fig, axs = plt.subplots(1, 1, )
+    for i in range(1):
+        axs.plot(X[i],  Y[i],   'r',     label=Y__[i])
+        axs.plot(X[i+1],Y[i+1], 'g--',   label=Y__[i+1])
+        axs.legend()
         axs.grid(True)
         axs.set_xlim(_xlim[0],_xlim[1])
         axs.set_ylim(_ylim[0],_ylim[1])
     plt.show()
 
 elif Ylen > 2:
-    fig, axs = plt.subplots(len(Y)-1, 1, figsize=(5, 10), layout="constrained")
-    for i in range(len(Y)-1):
-        axs[i].plot(X[i],  Y[i],   'r', label=Y_[i])
-        axs[i].plot(X[i+1],Y[i+1], 'g--',   label=Y_[i+1])
-        axs[i].legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    fig, axs = plt.subplots(Ylen-1, 1, )
+    for i in range(Ylen-1):
+        axs[i].plot(X[i],  Y[i],   'r',     label=Y__[i])
+        axs[i].plot(X[i+1],Y[i+1], 'g--',   label=Y__[i+1])
+        axs[i].legend()
         axs[i].grid(True)
         axs[i].set_xlim(_xlim[0],_xlim[1])
         axs[i].set_ylim(_ylim[0],_ylim[1])
     plt.show()
-
 
