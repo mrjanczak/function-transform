@@ -85,7 +85,7 @@ są błedne, bo po dodaniu modułu, wyraz -2 pozostaje "poza" ostatnim przekszta
 jest poprawne, bo każde kolejne przekształcenie modyfikuje całą funkcję - nasza kula śnieżna rośnie jako jedno wyrażenie
 
 
-### PRZEKSZTAŁCENIA XY
+### PRZEKSZTAŁCENIA NA ARGUMENCIE I FUNKCJI
 
 Niektóre przekształcenia na argumencie i funkcji można wykonać równocześnie pod warunkiem , że przestrzegamy odpowiednio obu zasad **"ostatni będą pierwszymi"** 
 i **"jednej kuli śnieżnej"**:
