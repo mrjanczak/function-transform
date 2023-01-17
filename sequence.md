@@ -31,8 +31,8 @@ Zasady ustalające właściwą kolejność przekształceń są całkowicie róż
 Przy przekształceniach na argumencie obowiązuje zasada, **"ostatni będą pierwszymi"**.
 
 Wprowadźmy następujące rozróżnienie:
-x bez minusa i wartości bezwzględnej nazwijmy **czystym x**
--x lub |x| nazwijmy **przekształconym x**
+- x bez minusa i wartości bezwzględnej nazwijmy **czystym x**
+- -x lub |x| nazwijmy **przekształconym x**
 
 Aby poprawnie przekształcić argument, każde kolejne przekształcenie musi być wykonane na czystym x. Mówiąc obrazowo dodany operator (tj. +, -, ×, | |) musi stykać się z czystym symbolem x. I tak:
 
@@ -60,7 +60,7 @@ widać, że operacja +1 stojąca niejako na końcu musi być wykonana jako pierw
 
 ### PRZEKSZTAŁCENIA NA FUNKCJI
 
-Przy przekształceniach na funkcji obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nietylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
+Przy przekształceniach na funkcji obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nie tylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
 
 ```f(x)+1 -> -f(x)+1```
 
