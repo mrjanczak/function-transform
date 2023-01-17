@@ -12,7 +12,7 @@ oraz
 
 ```f(x) -> f(x+1) -> f(|x|+1)```
 
-Na koniec otrzymujemy przecież tę samą funkcjię.
+Na koniec otrzymujemy przecież tę samą funkcję.
 
 Jednakże jeśli chcemy **WYZNACZYĆ GRAFICZNIE** wykres funkcji g(x) na drodze kolejnych przekształceń podstawowych, **MUSIMY** stosować określoną **KOLEJNOŚĆ**, 
 w przeciwnym razie nasze graficzne przekształcenia będą błędne! Przykładowo przekształcenie:
