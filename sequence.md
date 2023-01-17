@@ -28,7 +28,7 @@ Zasady ustalające właściwą kolejność przekształceń są całkowicie róż
 
 ### PRZEKSZTAŁCENIA NA ARGUMENCIE
 
-Przy przekształceniach na argumencie obowiązuje zasada, **"ostatni będą pierwszymi"**.
+Przy przekształceniach na argumencie obowiązuje zasada **"działań tylko na czystym x"**.
 
 Wprowadźmy następujące rozróżnienie:
 - x bez minusa i wartości bezwzględnej nazwijmy **czystym x**
@@ -44,7 +44,7 @@ jest błędne, bo +1 dodane jest do **przekształconego |x|**
 
 jest poprawne, bo operacja *wartość bezwzględna* wykonana jest na **czystym x**
 
-Stąd wynika wspomniana zasada **"ostatni będą pierwszymi"**. Na poniższym przykładzie:
+Można zauważyć, że operacje najbardziej oddalone od x muszą być wykonane jako pierwsze. Na poniższym przykładzie:
 
 ```
 f(x)        - funkcja podstawowa, gdzie np. f(x) = x**2 (2-ga potęga)
@@ -60,7 +60,8 @@ widać, że operacja +1 stojąca niejako na końcu musi być wykonana jako pierw
 
 ### PRZEKSZTAŁCENIA NA FUNKCJI
 
-Przy przekształceniach na funkcji obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nie tylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
+Przy przekształceniach na funkcji obowiązuje zasada **"operacji tylko na całej funkcji"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nie tylko na jej części, 
+mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz bardziej ją wydłużając. Poniższe przekształcenie:
 
 ```f(x)+1 -> -f(x)+1```
 
@@ -76,19 +77,21 @@ Podobnie jest z modułem ( wartością bezwzg.). Przekształcenia:
 
 ```f(x)+1  ->  f(x)+1 -2 -> |f(x)+1| -2```
 
-są błedne, bo po dodaniu modułu, wyraz -2 pozostaje "poza" ostatnim przekształceniem (modułem), mówiąc obrazowo dzielimy kulę śnieżną na dwie mniejsze - symetria częściowa na wykresie nie jest wzg. osi OX:
+są błedne, bo po dodaniu modułu, 
+wyraz -2 pozostaje "poza" ostatnim przekształceniem (modułem), 
+mówiąc obrazowo dzielimy wtedy funkcję na dwie mniejsze - 
+symetria częściowa na wykresie nie jest wzg. osi OX:
 
 ![Figure_5](https://user-images.githubusercontent.com/6569984/212888822-16dc6370-f3d9-4d4d-be9c-6d3034e03bf5.png)
 
 ```f(x)+1  ->  |f(x)+1|  -> |f(x)+1| -2```
 
-jest poprawne, bo każde kolejne przekształcenie modyfikuje całą funkcję - nasza kula śnieżna rośnie jako jedno wyrażenie
+jest poprawne, bo każde kolejne przekształcenie modyfikuje **całą** funkcję.
 
 
 ### PRZEKSZTAŁCENIA NA ARGUMENCIE I FUNKCJI
 
-Niektóre przekształcenia na argumencie i funkcji można wykonać równocześnie pod warunkiem , że przestrzegamy odpowiednio obu zasad **"ostatni będą pierwszymi"** 
-i **"jednej kuli śnieżnej"**:
+Niektóre przekształcenia na argumencie i funkcji można wykonać równocześnie pod warunkiem, że przestrzegamy odpowiednio obu powyższych zasad:
 - translacja T o wektor [a, b] funkcji f(x) -> f(x - a) + b
 - symetria względem środka układu współrzędnych S[0,0] funkcji f(x) -> -f(-x)
 
@@ -96,13 +99,12 @@ Przeanalizujmy poniższy przykład:
 ```
 f(x)
 f(x+1)              - dodajemy +1 do czystego x - **T[-1,0]**
--f(-x+1)            - mnożymy przez -1 argument i funkcjię - Symetria wzg. początku uk. współ. **S[0,0]**
+-f(-x+1)            - **mnożymy przez -1 argument i funkcjię** - Symetria wzg. początku uk. współ. **S[0,0]**
 -f(-|x|+1)          - wyciągamy wartość bezwgl. z czystego argumentu - **S.cz.OY**
--f(-|x+2|+1)+1      - dodajemy +2 do czystego argumentu i +1 do całej funkcji - **T[-2,1]**
+-f(-|x+2|+1)+1      - **dodajemy +2 do czystego argumentu i +1 do całej funkcji** - **T[-2,1]**
 |-f(-|x+2|+1)+1|    - wart. bezwg. z całej funkcji - **S.cz.OX**
 |-f(-|x+2|+1)+1|-1  - odejmujemy -1 od całej funkcji - **T[0,-1]**
 ```
 ![Figure_6](https://user-images.githubusercontent.com/6569984/212892374-48da9d34-7b26-472e-8e17-071361607f10.png)
 
-Przekształcenia **S[0,0]** i **T[-2,1]** zawierały operacje na argumencie i funkcji, ale przy zachowaniu powyższych zasad **"ostatni będą pierwszymi"** 
-i **"jednej kuli śnieżnej"**.
+Przekształcenia **S[0,0]** i **T[-2,1]** zawierają operacje na argumencie i funkcji.
