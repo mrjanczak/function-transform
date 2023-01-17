@@ -1,10 +1,7 @@
 # Definicje:
-Przekształcenie funkcji podstawowej f(x) do funkcji złożonej g(x) można wyrazić jako 2 oddzielne przekształcenia: na argumencie (PRZEKSZTAŁCENIA X) 
-i na funkcji (PRZEKSZTAŁCENIA Y):
+Przekształcenie funkcji podstawowej f(x) do funkcji złożonej g(x) można traktować jako 2 oddzielne przekształcenia na argumencie (PRZEKSZTAŁCENIA X) 
+i na funkcji (PRZEKSZTAŁCENIA Y). Podstawowe przekształcenia opisane są na stronie:
 
-funkcja poszukiwana g(x) = PRZEKSZTAŁCENIA Y [  f( PRZEKSZTAŁCENIA X( x ) ]
-
-Podstawowe przekształcenia opisane są na tej stronie:
 [https://pl.wikibooks.org/wiki/Matematyka_dla_liceum/Funkcje_i_ich_w%C5%82asno%C5%9Bci/Przekszta%C5%82canie_wykresu_funkcji]
 
 Z czysto artmetycznego znaczenia kolejność tych przekształceń nie ma znaczenia: n.p. funkcję złożoną g(x) = f(|x|+1) możemy z powodzeniem otrzymać na 2 sposoby:
@@ -15,7 +12,7 @@ oraz
 
 ```f(x) -> f(x+1) -> f(|x|+1)```
 
-Jednakże jeśli chcemy **WYZNACZYĆ GRAFICZNIE** wykres funkcji g(x) na drodze kolejnych przekształceń podstawowych, **MUSIMY** stosować określoną kolejność, 
+Jednakże jeśli chcemy **WYZNACZYĆ GRAFICZNIE** wykres funkcji g(x) na drodze kolejnych przekształceń podstawowych, **MUSIMY** stosować określoną **KOLEJNOŚĆ**, 
 w przeciwnym razie nasze graficzne przekształcenia będą błędne! Przykładowo przekształcenie:
 
 ```f(x) -> f(|x|) -> f(|x|+1)```
@@ -27,7 +24,7 @@ nie będzie translacją, co widać na wykresie:
 # Kolejność
 Zasady ustalające właściwą kolejność przekształceń są całkowicie różne dla przekształceń na argumencie i na funkcji.
 
-### PRZEKSZTAŁCENIA X
+### PRZEKSZTAŁCENIA NA ARGUMENCIE
 
 Przy przekształceniach X (na argumencie) obowiązuje zasada, **"ostatni będą pierwszymi"**.
 
@@ -59,7 +56,7 @@ widać, że operacja +1 stojąca niejako na końcu musi być wykonana jako pierw
 
 ![Figure_3](https://user-images.githubusercontent.com/6569984/212886355-d198f9ac-ea32-44ee-a42c-f4cb794210c3.png)
 
-### PRZEKSZTAŁCENIA Y
+### PRZEKSZTAŁCENIA NA FUNKCJI
 
 Tu obowiązuje zasada **"jednej kuli śnieżnej"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nietylko na jej części, mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz większej kuli śnieżnej. Poniższe przekształcenie:
 
