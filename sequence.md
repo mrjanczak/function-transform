@@ -101,12 +101,12 @@ Niektóre przekształcenia na argumencie i funkcji można wykonać równocześni
 Przeanalizujmy poniższy przykład:
 ```
 f(x)
-f(x+1)              - dodajemy +1 do czystego x - **T[-1,0]**
--f(-x+1)            - mnożymy przez -1 argument i funkcjię - Symetria wzg. początku uk. współ. **S[0,0]**
--f(-|x|+1)          - wyciągamy wartość bezwgl. z czystego argumentu - **S.cz.OY**
--f(-|x+2|+1)+1      - dodajemy +2 do czystego argumentu i +1 do całej funkcji - **T[-2,1]**
-|-f(-|x+2|+1)+1|    - wart. bezwg. z całej funkcji - **S.cz.OX**
-|-f(-|x+2|+1)+1|-1  - odejmujemy -1 od całej funkcji - **T[0,-1]**
+f(x+1)              - dodajemy +1 do czystego x - T[-1,0]
+-f(-x+1)            - mnożymy przez -1 argument i funkcjię - Symetria wzg. początku uk. współ. S[0,0]
+-f(-|x|+1)          - wyciągamy wartość bezwgl. z czystego argumentu - S.cz.OY
+-f(-|x+2|+1)+1      - dodajemy +2 do czystego argumentu i +1 do całej funkcji - T[-2,1]
+|-f(-|x+2|+1)+1|    - wart. bezwg. z całej funkcji - S.cz.OX
+|-f(-|x+2|+1)+1|-1  - odejmujemy -1 od całej funkcji - T[0,-1]
 ```
 ![Figure_6](https://user-images.githubusercontent.com/6569984/212892374-48da9d34-7b26-472e-8e17-071361607f10.png)
 
