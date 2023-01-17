@@ -12,8 +12,7 @@ def _f(x):
 - Use basic function as f(x) - can be used only once per line!
 - Allowable operators: +, -, *, /, ** (power), |...| (absolute value e.g. |x+2|)
 ```python
-Y_ = '''
-f(x)
+Y_ = '''f(x)
 f(x+1)
 f(-x+1)
 f(-|x|+1)
