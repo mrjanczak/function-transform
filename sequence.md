@@ -1,6 +1,6 @@
 # Definicje:
-Przekształcenie funkcji podstawowej f(x) do funkcji złożonej g(x) można traktować jako 2 oddzielne przekształcenia na argumencie (PRZEKSZTAŁCENIA X) 
-i na funkcji (PRZEKSZTAŁCENIA Y). Podstawowe przekształcenia opisane są na stronie:
+Przekształcenie funkcji podstawowej f(x) do funkcji złożonej g(x) można traktować jako 2 oddzielne przekształcenia na argumencie i na funkcji. 
+Podstawowe przekształcenia opisane są na stronie:
 
 [https://pl.wikibooks.org/wiki/Matematyka_dla_liceum/Funkcje_i_ich_w%C5%82asno%C5%9Bci/Przekszta%C5%82canie_wykresu_funkcji]
 
