@@ -14,8 +14,7 @@ def _f(x):
 # Step 2 - define sequence of equations to graphically determine plot of desired equation 
 # Use basic function as f(x) - can be used only once per line!
 # Allowable operators: +, -, *, /, ** (power), |...| (absolute value e.g. |x+2|)
-Y_ = '''
-f(x)
+Y_ = '''f(x)
 f(x+1)
 f(-x+1)
 f(-|x|+1)
