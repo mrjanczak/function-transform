@@ -60,12 +60,15 @@ widać, że operacja +1 stojąca niejako na końcu musi być wykonana jako pierw
 
 ### PRZEKSZTAŁCENIA NA FUNKCJI
 
-Przy przekształceniach na funkcji obowiązuje zasada **"operacji tylko na całej funkcji"** - kolejne przekształcenia muszą być wykonane na całej funkcji, a nie tylko na jej części, 
-mówiąc obrazowo przyklejają się one do jednej, stopniowo coraz bardziej ją wydłużając. Poniższe przekształcenie:
+Przy przekształceniach na funkcji obowiązuje zasada **"operacji tylko na całej funkcji"** - 
+kolejne przekształcenia muszą być wykonane na całej funkcji, a nie tylko na jej części, 
+mówiąc obrazowo przyłączają się one do funkcji, stopniowo coraz bardziej ją wydłużając. 
+Poniższe przekształcenie:
 
 ```f(x)+1 -> -f(x)+1```
 
-jest błędne, bo mnożenie przez -1 wykonaliśmy tylko na części funkcji, a wyraz +1 pozostał niejako pominięty - w efekcie symetria całkowita na wykresie nie jest wzg. osi OX:
+jest błędne, bo mnożenie przez -1 wykonaliśmy tylko na części funkcji, 
+a wyraz +1 pozostał niejako pominięty - w efekcie symetria całkowita na wykresie nie jest wzg. osi OX:
 
 ![Figure_4](https://user-images.githubusercontent.com/6569984/212887645-907c1f6d-b812-4d7a-9b42-ef081e3588bf.png)
 
